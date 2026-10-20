@@ -31,7 +31,7 @@
     "Sources/NookPluginSDK/PluginSpeech.swift": "378b4188f5bf2aa3d2d87ccb3459deb34ae75cd761c82e8c834454d12f79bd74",
     "Sources/NookPluginSDK/PluginViewResource.swift": "1996c42635520c2d9b0a7989c0f443af555f152f9a967f10fba4f62e9d61272d",
     "Sources/NookPluginSDK/PluginApplication.swift": "2857bf934cd11192d0917e04c7478305b95714ac1be5ec4be9e38bb128509abe",
-    "Sources/NookPluginSDK/PluginPresenceMark.swift": "9f472a436bf94519631c5bae1b7eb7cc27ff9b42e6efc256e26f986f49aa70b6",
+    "Sources/NookPluginSDK/PluginPresenceMark.swift": "6d1b17722cb2e348d6617a3c80d3141702e70b240b6aed3f2c009e650c83ef08",
     "Sources/NookPluginSDK/PluginEvidenceAnswer.swift": "f75cc00baba3b26cfa9d79d6a3d4bde611b05412051bb87366c52f95d8af211e",
     "Sources/NookPluginSDK/PluginCalendar.swift": "6cf9d31d113f8bcd48b633d5a23dca31cc4109a2141c2c6c0fbfea805da744ae",
     "Sources/NookPluginSDK/PluginWorkspace.swift": "0d22e8cebfeba4e3652dc68b9a7397a2b17ff2c6de63e72590a94f990efff720",
@@ -104,7 +104,10 @@
     "Sources/NookPluginSDK/Resources/avatar-monoline-ember.usdz": "c33633ca31e151e869b5b0aed88db23b7ad0891d0841f4fbd69bfba52709e12c",
     "Sources/NookPluginSDK/Resources/avatar-monoline-nero.glb": "9611952609df37891453f2a54f25f1438ae75c1693d9fc5a5851cba50fdf29e6",
     "Sources/NookPluginSDK/Resources/avatar-monoline-nero.png": "d3ddb3091da66133adfe060306143bbdf49bcbb17afe9b32d4e296f73f019f7c",
-    "Sources/NookPluginSDK/Resources/avatar-monoline-nero.usdz": "398531ed55677989c3c54e4b843e7b0a4142bdd7a5de7ea44dcc906e323b8ac6"
+    "Sources/NookPluginSDK/Resources/avatar-monoline-nero.usdz": "398531ed55677989c3c54e4b843e7b0a4142bdd7a5de7ea44dcc906e323b8ac6",
+    "Sources/NookPluginSDK/PluginSeasonalComposition.swift": "43bd489f4e091b61c23c83d954fdf54fe325a88591f40d8f45ee632b3b8686d4",
+    "Sources/NookPluginSDK/PluginSeasonalNativeArt.swift": "fbe41e880285df596aa5912e17945b77b9bad90291fb73a7487cc0d2cacd9053",
+    "Sources/NookPluginSDK/PluginSeasonalSurface.swift": "31d4701d112d886da83153bea393d979f78dba6f31acba6d0e01824602ec5aba"
   },
   "avatarSceneContract": "appearance-v1 optional avatar/seasonal fields; local 2026-10-19 source slice; Elemental default and one Light Drawing study; 24 conversions pending; rich Christmas composition is a separately approved target, not implemented"
 }
