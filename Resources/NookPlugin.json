@@ -1,0 +1,15 @@
+{
+  "id": "cafe.nero.example.creator",
+  "name": "Creator Demo",
+  "version": "0.1.2",
+  "apiVersion": 1,
+  "summary": "An independent local demo module built with the NeroNook creator kit.",
+  "capabilities": [
+    "Shows local demo state and changes a demo counter",
+    "Publishes read-only demo status through the shared SDK"
+  ],
+  "icon": {
+    "symbol": "hammer.fill",
+    "color": "C4A3FF"
+  }
+}
