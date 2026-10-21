@@ -99,6 +99,9 @@ public struct PluginSnapshot: Codable, Equatable, Sendable {
     public var iconPNG: Data?
     public var volumeEndpoints: [PluginVolumeEndpoint]?
     public var attention: PluginAttention?
+    /// Ephemeral capture/playback occupancy; host aggregates without interpreting provider state.
+    public var avatarInteractionBusy: Bool? = nil
+    public var assistantSpeech: PluginAvatarSpeech? = nil
     public init(title: String, status: String, activity: String = "", progress: Double? = nil, fields: [PluginField] = [], actions: [PluginAction] = [], metrics: [PluginField]? = nil, sections: [PluginSection]? = nil, media: PluginMedia? = nil, badge: String? = nil, panels: [PluginPanel]? = nil, iconPNG: Data? = nil, volumeEndpoints: [PluginVolumeEndpoint]? = nil, attention: PluginAttention? = nil) {
         self.title = title; self.status = status; self.activity = activity; self.progress = progress; self.fields = fields; self.actions = actions
         self.metrics = metrics; self.sections = sections; self.media = media; self.badge = badge; self.panels = panels; self.iconPNG = iconPNG; self.volumeEndpoints = volumeEndpoints; self.attention = attention
@@ -107,6 +110,7 @@ public struct PluginSnapshot: Codable, Equatable, Sendable {
     public func enabledDisplayAction(_ id: String) -> PluginAction? { displayActions.first { $0.id == id && $0.enabled } }
     public func validate() throws {
         try attention?.validate()
+        try assistantSpeech?.validate()
         if let endpoints = volumeEndpoints {
             guard endpoints.count <= 8, Set(endpoints.map(\.id)).count == endpoints.count else { throw ModuleProblem("Invalid volume endpoint list.") }
             for endpoint in endpoints { try endpoint.validate() }
